@@ -40,6 +40,7 @@ public class GameView extends GridLayout {
 
     private void initGameView() {
         setColumnCount(4);
+//        背景颜色
         setBackgroundColor(0xffbbbbb0);
 //        背景图
 //        setBackgroundResource(R.drawable.back);
