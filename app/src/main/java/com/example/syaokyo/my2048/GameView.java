@@ -20,7 +20,7 @@ import java.util.List;
 
 public class GameView extends GridLayout {
     private Card[][] cardMap = new Card[4][4];
-    private List<Point> emptyPoints= new ArrayList<Point>();
+    private List<Point> emptyPoints= new ArrayList<>();
     private boolean merge=false;
 
     public GameView(Context context) {
@@ -41,6 +41,7 @@ public class GameView extends GridLayout {
     private void initGameView() {
         setColumnCount(4);
         setBackgroundColor(0xffbbbbb0);
+//        背景图
 //        setBackgroundResource(R.drawable.back);
         setOnTouchListener(new OnTouchListener() {
             private float startX, startY, offsetX, offsetY;
@@ -143,7 +144,7 @@ public class GameView extends GridLayout {
                 }
             }
         }
-        if (merge==true){
+        if (merge){
             addRandomNum();
             checkOver();
         }
@@ -171,7 +172,7 @@ public class GameView extends GridLayout {
                 }
             }
         }
-        if (merge==true){
+        if (merge){
             addRandomNum();
             checkOver();
         }
@@ -199,7 +200,7 @@ public class GameView extends GridLayout {
                 }
             }
         }
-        if (merge==true){
+        if (merge){
             addRandomNum();
             checkOver();
         }
@@ -227,7 +228,7 @@ public class GameView extends GridLayout {
                 }
             }
         }
-        if (merge==true){
+        if (merge){
             addRandomNum();
             checkOver();
         }
